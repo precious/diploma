@@ -1,3 +1,5 @@
 *.o
 *.user
 Makefile
+program
+*.bnd
