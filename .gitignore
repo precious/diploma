@@ -1,5 +1,5 @@
 *.o
 *.user
 Makefile
-program
+operation_recovery/program/program
 *.bnd
