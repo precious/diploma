@@ -4,12 +4,11 @@
 #define SIZE 12
 
 typedef float v4sf __attribute__ ((vector_size (16)));
+#define AR(t) ((float*)&t)
 
 float *mv_mult(float mat[SIZE][SIZE], float vec[SIZE]) {
   static float ret[SIZE];
   int i, j;
-  long long t;
-  printf("sizeof type: %d\n", sizeof(int_t));
   v4sf m, v, r, r0={0.,0.,0.,0.};
     for (i = 0; i < SIZE; i++) {
         r = r0;
@@ -20,7 +19,7 @@ float *mv_mult(float mat[SIZE][SIZE], float vec[SIZE]) {
             v = m * v;
             r = r + v;*/
         }
-        ret[i] = r[0]+r[1]+r[2]+r[3];
+        ret[i] = AR(r)[0] + AR(r)[1] + AR(r)[2] + AR(r)[3];
     }
     return ret;
 }
@@ -34,7 +33,8 @@ int main(){
  for(i=0;i<SIZE;i++) vec[i]=1.;
 
  c = a * b;
- printf("%f, %f, %f, %f\n", c[0], c[1], c[2], c[3] );
+ printf("%f, %f, %f, %f\n", AR(c)[0], AR(c)[1], AR(c)[2], AR(c)[3] );
+ printf("size = %d\n",sizeof(v4sf));
 
  res = mv_mult( mat, vec);
  for(i=0;i<SIZE;i++) printf("%d  %f \n", i, res[i]);
