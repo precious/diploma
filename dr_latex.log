@@ -71,6 +71,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00CE (decimal 206)
    defining Unicode char U+00CF (decimal 207)
    defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D0 (decimal 208)
    defining Unicode char U+00D1 (decimal 209)
    defining Unicode char U+00D2 (decimal 210)
    defining Unicode char U+00D3 (decimal 211)
