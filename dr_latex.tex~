@@ -30,6 +30,31 @@
 
 \section{Опис розв’язання}
 \subsection{Опис структур даних}
+\subsubsection{Point}
+
+\subsubsection{Vector}
+
+\subsubsection{Locus}
+
+\subsubsection{Line}
+
+\subsubsection{ThreePoints}
+
+\subsubsection{Triangle}
+
+\subsubsection{Plane}
+
+\subsubsection{OrientedPlane}
+
+\subsubsection{Particle}
+
+\subsubsection{Sphere}
+
+\subsubsection{Object3D}
+
+\subsubsection{GenerativeSphere}
+
+
 
 \subsection{Опис геометричних функцій}
 \subsubsection{Перевірка, чи знаходиться точка всередині трикутника}
