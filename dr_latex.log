@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.15)  2 MAY 2012 02:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.15)  2 MAY 2012 02:46
 entering extended mode
  %&-line parsing enabled.
 **dr_latex.tex
@@ -558,20 +558,20 @@ Package ifvtex Info: VTeX not detected.
 (./dr_latex.aux)
 \openout1 = `dr_latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -617,39 +617,34 @@ driver: pdftex
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (20.30286pt too wide) in paragraph at lines 25--26
-[]\T2A/cmr/m/n/17.28 В да-нiй ро-бо-тi про-во-ди-ться пря-ме мо-де-лю-ва-н-ня м
-е-то-дом Монте-
+Overfull \hbox (0.74475pt too wide) in paragraph at lines 43--44
+[]\T2A/cmr/m/n/12 Тип вве-де-но для пред-став-ле-н-ня ве-кто-ра в три-ви-мiр-но
+-му про-сто-рi. Клас Vector успад-
  []
 
-[2] [3] [4] [5] [6] [7] [8] [9]
-Underfull \hbox (badness 1303) in paragraph at lines 183--185
-[]\T2A/cmr/m/n/17.28 О.М. Бе-ло-цер-ков-ский, Ю.И. Хло-пков: \T2A/cmr/m/it/17.2
-8 Ме-то-ды Монте-
- []
-
-[10] [11] (./dr_latex.aux) ) 
+[2] [3] [4] [5] [6] (./dr_latex.aux) ) 
 Here is how much of TeX's memory you used:
- 2517 strings out of 494818
- 28526 string characters out of 1178666
- 87961 words of memory out of 3000000
- 5693 multiletter control sequences out of 15000+50000
- 11659 words of font info for 29 fonts, out of 3000000 for 9000
+ 2528 strings out of 494818
+ 28595 string characters out of 1178666
+ 88961 words of memory out of 3000000
+ 5697 multiletter control sequences out of 15000+50000
+ 12790 words of font info for 33 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
- 27i,7n,24p,2315b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t
-2a/lati1728.600pk> </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx120
-0.600pk> </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> <
-/home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> </home/prec
-ious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1728.600pk> </home/precious/.texm
-f-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dr_latex.pdf (11 pages, 180408 bytes).
+ 27i,7n,24p,2312b,146s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/precious/.texmf-var/fonts/pk/ljfo
+ur/lh/lh-t2a/lati1200.600pk> </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t
+2a/labx1200.600pk> </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx144
+0.600pk> </home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1200.600pk> <
+/home/precious/.texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on dr_latex.pdf (6 pages, 178639 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
+ 335 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
