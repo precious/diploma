@@ -1,0 +1,3 @@
+[submodule "dr_program"]
+	path = dr_program
+	url = git@github.com:precious/dr_program.git
