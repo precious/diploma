@@ -24,7 +24,7 @@
   {\normalfont\normalsize\bfseries\centering}{\thesubsubsection}{1em}{}
 
 \usepackage{fancyhdr}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \lhead{} \chead{} \rhead{\normalsize\thepage}
 \lfoot{} \cfoot{} \rfoot{}
 \renewcommand{\headrulewidth}{0pt}
@@ -39,7 +39,7 @@
 \setcounter{page}{2}
 
 \section*{Реферат}
-Дипломна робота:  с., рис. 5, табл. 1, джерел 10, додатків 1.
+Дипломна робота: 44 с., рис. 5, табл. 1, джерел 10, додатків 1.
 
 \textbf{Об’єкт дослідження}: рух космічного апарату та його електризація елементарними частинками плазми.
 
@@ -50,6 +50,20 @@
 \textbf{Результати дослідження можуть бути застосовані} при конструюванні космічних апаратів; також розроблена база може бути використана при розробці схожих моделей.
 
 \textbf{Перелік ключових слів}: ШТУЧНИЙ СУПУТНИК, КОСМІЧНИЙ АПАРАТ, ЕЛЕКТРИЗАЦІЯ, КОСМІЧНА ПЛАЗМА, МЕТОД МОНТЕ-КАРЛО, МОДЕЛЮВАННЯ, ЕЛЕМЕНТАРНІ ЧАСТИНКИ.
+
+\newpage
+
+\section*{Annotation}
+
+The graduation research of the 4-year student Vsevolod Kulaga (DNU, Applied Mathematics Department, the Computer Technology Chair) deals with the development of software for calculation of spacecrafts electrification using the statisctical Monte-Carlo method.
+ 
+The developed software reads models of the spacecrafts from the file (many popular file formats for 3D models are supported), performs simulation of the motion of elementary particles and processes their collision with the spacecraft. At that time program also calulates the total charge and potential that appears on the spacecrafts surface. The process of modeling is visulized using the OpenGL library.
+
+The software is developed for researhcing of spacecrafts electrification process to reduce its negative effects in future.
+
+The work is interesting for spececrafts designers and programmers who deal with similar tasks.
+
+Bibliography 10, pictures 5, tables 1, supplement.
 
 \newpage
 
@@ -93,6 +107,15 @@
 \newpage
 
 \section{Огляд}
+\subsection{Історичний огляд}
+Вперше ефекти електростатичної зарядки були розглянуті В.Г. Куртом і В.І. Морозом ще в 1961 році. Їх робота стала потужним поштовхом в розвитку досліджень, пов’язаних зі створенням засобів електростатичного захисту від космічних випромінювань і вивченням можливості їх використання в комплексі з іншими системами космічного апарату при тривалому знаходженні останнього в області радіаційного впливу.
+
+В наші дні велика увага приділяється комп’ютерному моделюванню процесів електричного зарядження  поверхні космічних апаратів. Комп’ютерне моделювання дозволяє отримати повну картину електризації поверхні апарату заданої геометрії в умовах космосу без значних затрат часу і коштів.
+
+Існує декілька комп’ютерних програм, призначених для розрахунку електризації поверхні космічних апаратів. Найпершою такою програмою стала NASCAP (NASA Charging Analyzer Program), розроблена S-Cubed (System, Science and Software) для NASA і ВПС США близько 1980 року.
+
+В даній роботі розробляється програма для розрахунку електризації космічних апаратів, в якій це робиться за допомогою статистичного методу Монте-Карло.
+
 \subsection{Фізична модель}
 При взаємодії космічного апарату (КА) з плазмою, що оточує його в польоті, виникають різноманітні фізичні явища, специфіка яких залежить як від параметрів плазми, так і від характеристик КА, в першу чергу -- від властивостей матеріалів, що знаходяться на його поверхні, і від конфігурації апарату. До таких явищ належать: утворення електричного заряду на поверхні КА, розпилення матеріалів, світіння на поверхні і поблизу неї, збудження коливань у плазмі та деякі інші.
 
@@ -698,7 +721,7 @@ j_0 = e n \left( \frac{kT}{2 \pi m} \right)^\frac{1}{2}.
 	showspaces=false,
 	showstringspaces=false,
 	showtabs=false
-}
+} 
 
 \lstinputlisting[language=C++]{dr_program/constants.h}
 \lstinputlisting[language=C++]{dr_program/constants.cpp}
