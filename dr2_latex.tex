@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage [T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage [english,ukrainian] {babel}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{lastpage}
+\usepackage{graphicx}
+
+\usepackage{listings}
+
+\usepackage{geometry}
+\geometry{left=1cm,top=1cm,right=1cm,bottom=1cm,nohead,nofoot}
+
+
+\begin{document}
+
+Нехай є деяке електростатичне поле і невідома функція $u(x,y,z)$, що задає величину електростатичного потенціалу в кожній точці області простору.
+
+Задача пошуку невідомої функції $u(x,y,z)$ описується рівнянням Лапласа: (Чому?)
+\[
+\frac{\partial ^2 u}{\partial x^2} + \frac{\partial ^2 u}{\partial y^2} + \frac{\partial ^2 u}{\partial z^2} = 0,
+\] або
+\[
+\Delta u = 0.
+\]
+
+При цьому сумарний потенціал на поверхні тіла в початковий момент буде дорівнювати деякій константі
+
+\[
+\left.u\right|_S = 1.
+\]
+
+(з огляду на те, що поверхня тіла є добре провідною, можна вважати, що потенціал на поверхні в кожний момент постійний)
+
+
+(ця крайова задача є задачею Діріхле)
+
+Фундаментальний розв’язок тривимірного рівняння Лапласа: $F_{mp} = \frac{1}{4\pi r_{mp}}$, де \[r_{mp} = \sqrt{(x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2}.\]
+
+(посилання на Тіхнова, Самарського - рівняння мат. фізики)
+
+Для довільної точки М області, що розглядається, буде справедливо:
+
+// \textbf{TODO} Розписати, як ми це отримали
+\[
+u_M = \int\limits_S \frac{\partial u}{\partial n}(P) F_{MP} \, \mathrm{d}S_P - \int\limits_S u_P \frac{\partial F_{MP}}{\partial n} \, \mathrm{d}S_P
+\]
+
+Оскільки поверхня нашого тіла апроксимується трикутними полігонами, можна інтеграли по площі поверхні тіла переписати як суму інтегралів по площі кожного з полігонів (постійна на кожному полігоні):
+
+\begin{equation} \label{eq:triangulated_equation}
+u_M = \sum_{j=1}^{N} \frac{\partial u}{\partial n}(j) \int\limits_{S_j} F_{MP} \, \mathrm{d}S_j - \sum_{j=1}^{N} u_j \int\limits_{S_j} \frac{\partial F_{MP}}{\partial n} \, \mathrm{d}S_j
+\end{equation}
+
+($u$ та її похідна можуть бути винесені з-під інтегралу, оскільки на кожному полігоні вони приймають постійне значення).
+
+В останній формулі замість M послідовно підставивши N точок (N -- кількість полігонів, які апроксимують поверхню тіла), кожна з яких є центром одного з полігонів, отримаємо N рівнянь:
+
+\[
+u_i = \sum_{j=1}^{N} \frac{\partial u}{\partial n}(j) \int\limits_{S_j} F_{iP} \, \mathrm{d}S_j - \sum_{j=1}^{N} u_j \int\limits_{S_j} \frac{\partial F_{iP}}{\partial n} \, \mathrm{d}S_j, i = 1..N
+\]
+
+Позначимо
+\[A_{ij} = \int\limits_{S_j} F_{iP} \, \mathrm{d}S_j\]
+\[B_{ij} = \int\limits_{S_j} \frac{\partial F_{iP}}{\partial n} \, \mathrm{d}S_j.\]
+
+Ці коефіцієнти є постійними для задачі, що розглядається, тому можуть бути обчислені лише раз для кожного тіла і використовуватись в подальшому без змін. Можна побачити, що при $i = j$ в вищезазначених формулах з’являться невласні інтеграли, які належить обчислити окремо.
+
+Отримаємо систему з N алгребраїчних рівнянь відносно $\frac{\partial u}{\partial n}(j)$
+\[
+u_i = \sum_{j=1}^{N} \frac{\partial u}{\partial n}(j) A_{ij} - \sum_{j=1}^{N} u_j B_{ij}, i = 1..N
+\]
+або
+\[
+\sum_{j=1}^{N} \frac{\partial u}{\partial n}(j) A_{ij} = u_i + \sum_{j=1}^{N} u_j B_{ij}, i = 1..N
+\]
+
+Розв’язавши дану систему лінійних алгебраїчних рівнянь, отримаємо значення $\frac{\partial u}{\partial n}(j)$. Таким чином, підставивши ці значення \ref{eq:triangulated_equation}, можна знайти значення $u_M$ для будь-якої точки області.
+
+//задача дирихле, $u$, $u_i$ на границе известно
+
+//интеграл $B_{ij}$ - телесный угол, под которым полигон виден из точки М
+
+// интегральное уравнение Фернгольда 1-2 рода (1 рода - некорректно - но для случая гладки ядер. если i=j, то расстояние между ядрами 0)
+
+
+\end{document}
