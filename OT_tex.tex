@@ -202,6 +202,30 @@ l_\text{Г} = a \cdot (n - 1) = 3 \cdot (4 - 1) = 9\ \text{м}.
 
 Приймаємо товщину горизонтального електрода $b = 0.005\ \text{м}$.
 
+Знаходимо опір горизонтального електрода:
+\[
+R_\text{Г} = \frac{\rho \cdot \psi}{2 \cdot \pi \cdot l_\text{Г}} \cdot ln \frac{2 \cdot l_\text{Г}^2}{b \cdot h}
+\]
+\[
+R_\text{Г} = \frac{50 \cdot 1.3}{2 \cdot 3.14 \cdot 9} \cdot ln \frac{2 \cdot 9^2}{0.005 \cdot 0.6} = 12.5\ \text{Ом}.
+\]
+
+Знаходимо за \cite{dzunzuk} коефіцієнт використання горизонтального електрода:
+\[
+\eta_\text{Г} = \frac{1.5}{n} + 0.176 = 0.4.
+\]
+
+Знаходимо опір штучного заземлювача:
+\[
+R_\text{Ш} = \frac{R_\text{В} \cdot R_\text{Г}}{R_\text{В} \cdot \eta_\text{Г} + n \cdot R_\text{Г} \cdot \eta_\text{В}} = \frac{22 \cdot 12.5}{22 \cdot 0.4 + 4 \cdot 12.5 \cdot 0.85} = 5.36\ \text{Ом}.
+\]
+
+Знаходимо загальний опір заземлювача:
+\[
+R = \frac{R_\text{П} \cdot R_\text{Ш}}{R_\text{П} + R_\text{Ш}} = \frac{10 \cdot 5.36}{10 + 5.36} = 3.49\ \text{Ом}.
+\]
+
+Оскільки опір заземлювача менше $R_\text{Д}=4\ \text{Ом}$ розрахунок виконаний вірно.
 
 
 \begin{thebibliography}{9}
