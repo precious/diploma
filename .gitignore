@@ -5,7 +5,6 @@ operation_recovery/program/program
 *.bnd
 dr_program/
 .*
-*.png
 *.JPG
 *.jpeg
 *.pp?
