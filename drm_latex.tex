@@ -762,29 +762,42 @@ P = P_0 + S.
 
 Також слід зазначити, що сині точки позначають електрони, а червоні -- іони.
 
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.50]{screens/traject.png}
+\caption{Візуалізація траєкторій частинок}
+\label{fig:f5}
+\end{figure}
+
+На рисунку \ref{fig:f5} зображені траєкторії руху частинок при заряді КА -0.0005. Такий великий від’ємний заряд в реальних умовах не досягається, але тут його взято для наочності, щоб зміна траєкторій була значною
+
 \subsubsection{Результати спостережень}
-Зміна заряду (за час 0.00025 секунди)
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=1.00]{screens/screenshot5.png}
-\caption{Зміна заряду}
-\end{figure}
-\newpage
-
-Зміна потенціалу (за час 0.00025 секунди)
-\begin{figure}[!htp]
-\centering
-\includegraphics[scale=1.00]{screens/screenshot6.png}
-\caption{Зміна потенціалу}
+\includegraphics[scale=0.50]{screens/000002_txt.png}
+\caption{Зміна заряду з плином часу при початковому заряді КА -0.000002 Кл}
 \end{figure}
 
-Сумарна кількість зіткнень частинок (в цифрах реальної системи) з космічним апаратом (за час 0.00025 секунди)
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=1.00]{screens/screenshot7.png}
-\caption{Сумарна кількість зіткнень}
+\includegraphics[scale=0.50]{screens/000005_txt.png}
+\caption{Зміна заряду з плином часу при початковому заряді КА -0.000005 Кл}
 \end{figure}
-\newpage
+
+Отже, можна зробити висновок, що в залежності від початкового стану КА, його сумарний заряд буде зменшуватись або збільшуватись, доки не досягне деякого значення, поблизу якого буде коливатися. З отриманих даних видно, що цей значення близьке до -0.00005 Кл.
+
+В \cite{novikov} бачимо, що значення потенціалів на КА досягають 10-20 кВ. Звідси можемо знайти наближене значення заряду на поверхні КА:
+\[
+\frac{1}{4 \cdot \pi \cdot \varepsilon_0} \frac{q}{R}  = 2 \cdot 10^4 \text{В}
+\]
+($R$ -- радіус сфери, описаної навколо КА)
+\[
+q = 2 \cdot 10^4 \cdot 4 \cdot \pi \cdot \varepsilon_0 \cdot 2 \cdot 8.85 \cdot 10^{-12} = 0.00000445 \text{Кл}
+\]
+
+Слід зазначити, що в програмі використовувалась щільність іонів, що в два рази менше за реальну. Це було зроблено для того, щоб зменшити час, необхідний для збігання заряду до шуканого значення. Тому це значення вийшло дещо більшим за те, яке спостерігається в реальних умовах.
+
+
 
 \newpage
 \section{Охорона праці та безпека в надзвичайних ситуаціях}
@@ -1131,5 +1144,6 @@ R = \frac{R_\text{П} \cdot R_\text{Ш}}{R_\text{П} + R_\text{Ш}} = \frac{10 \
 \lstinputlisting[language=C++]{dr_program/time_utils.cpp}
 \lstinputlisting[language=C++]{dr_program/types.h}
 \lstinputlisting[language=C++]{dr_program/types.cpp}
+\lstinputlisting[language=C++]{dr_program/fortran_modules.h}
 \lstinputlisting[language=C++]{dr_program/main.cpp}
 \end{document}
