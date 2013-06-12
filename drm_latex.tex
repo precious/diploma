@@ -55,7 +55,7 @@
 
 \section*{Annotation}
 
-The graduation research of the 4-year student Vsevolod Kulaga (DNU, Applied Mathematics Department, the Computer Technology Chair) deals with the development of software for calculation of spacecrafts electrification using the statisctical Monte-Carlo method.
+The graduation research of the 5-year student Vsevolod Kulaga (DNU, Applied Mathematics Department, the Computer Technology Chair) deals with the development of software for calculation of spacecrafts electrification using the statisctical Monte-Carlo method.
  
 The developed software reads models of the spacecrafts from the file (many popular file formats for 3D models are supported), performs simulation of the motion of elementary particles and processes their collision with the spacecraft. At that time program also calulates the total charge and potential that appears on the spacecrafts surface. The process of modeling is visulized using the OpenGL library.
 
@@ -488,7 +488,7 @@ j_0 = e n \left( \frac{kT}{2 \pi m} \right)^\frac{1}{2}.
 Також в модулі з функціями для обробки файлів присутня змінна, що задає масштаб (за замовчуванням дорівнює одиниці) -- наприклад, на випадок, якщо розміри тіла вимірюються в міліметрах.
 
 \subsection{Опис функцій для розв’язування крайової задачі}
-Ці функції реалізовані в модулі, що написаний мовою Fortran-90, або є обгортками для них.
+Ці функції реалізовані в модулі, що написаний мовою Fortran-90, або є обгортками для них (код цього модуля можна переглянути і завантажити за адресою \url{https://github.com/precious/dr_program/tree/master/fortran_modules}).
 
 \subsubsection{solveBoundaryProblem}
 Функція є обгорткою для функції laplace\_ із зовнішнього модуля. Викликається на початку роботи програми. Приймає аргументом масив полігонів космічного апарату і розв’язує крайову задачу, що описана вище, ініціалізуючи внутрішні змінні, необхідні для подальшої роботи. 
@@ -771,7 +771,13 @@ P = P_0 + S.
 
 \begin{figure}[!htp]
 \centering
-\includegraphics[scale=0.50]{screens/000005_txt.png}
+\includegraphics[scale=0.50]{screens/000007_txt.png}
+\caption{Зміна заряду з плином часу при початковому заряді КА -0.000007 Кл}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+	\makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{screens/000005_txt.png}}%
 \caption{Зміна заряду з плином часу при початковому заряді КА -0.000005 Кл}
 \end{figure}
 
@@ -980,12 +986,16 @@ R = \frac{R_\text{П} \cdot R_\text{Ш}}{R_\text{П} + R_\text{Ш}} = \frac{10 \
 
 Оскільки опір заземлювача менше $R_\text{Д}=4\ \text{Ом}$, розрахунок виконаний вірно.
 
-\subsection{Висновок}
-Описано шкідливі та небезпечні фактори, що діють у приміщенні, а також професійні захворювання, які можуть стати наслідками дії цих факторів.
+\vspace{20 mm}
 
-Дано розрахунок пристрою заземлення, встановлення якого підвищує електробезпеку.
+Отже, в цьому розділі
+\begin{itemize}
+\item Описано шкідливі та небезпечні фактори, що діють у приміщенні, а також професійні захворювання, які можуть стати наслідками дії цих факторів.
 
-Проведено заміри основних параметрів робочого приміщення та зроблено їх аналіз відповідно до чинних норм та правил охорони праці. При цьому виявлені порушення норм та дані рекомендації щодо їх виправлення.
+\item Дано розрахунок пристрою заземлення, встановлення якого підвищує електробезпеку.
+
+\item Проведено заміри основних параметрів робочого приміщення та зроблено їх аналіз відповідно до чинних норм та правил охорони праці. При цьому виявлені порушення норм та дані рекомендації щодо їх виправлення.
+\end{itemize}
 
 Виправлення виявлених порушень зменшить ймовірність нещасних випадків, виробничого травматизму, професійних захворювань та збільшить продуктивність праці.
 \newpage
